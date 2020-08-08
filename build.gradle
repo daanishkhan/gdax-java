@@ -4,6 +4,7 @@ wrapper {
 
 allprojects {
     apply plugin: 'java'
+    apply plugin: 'maven'
 
     group = 'com.coinbase.exchange'
     description = 'Client for the Coinbase Pro API'
