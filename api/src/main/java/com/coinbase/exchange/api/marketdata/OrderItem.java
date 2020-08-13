@@ -23,13 +23,10 @@ public class OrderItem implements Comparable {
         }
         price =  new BigDecimal(limitOrders.get(0));
         size = new BigDecimal(limitOrders.get(1));
-        if (isString(limitOrders.get(2))) {
-            orderId = limitOrders.get(2);
-            num = new BigDecimal(1);
-        } else {
-            orderId = null;
-            num = new BigDecimal(1);
-        }
+
+        orderId = limitOrders.get(2);
+        num = new BigDecimal(1);
+
     }
 
     public BigDecimal getPrice() {

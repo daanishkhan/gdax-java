@@ -84,6 +84,8 @@ public class OrderIntegrationTest extends BaseIntegrationTest {
         orders.stream().forEach(o -> assertTrue(o.getId() != order.getId()));
     }
 
+    public Signature
+
     @Test
     public void cancelAllOrders() {
         List<Order> cancelledOrders = testee.cancelAllOpenOrders();
